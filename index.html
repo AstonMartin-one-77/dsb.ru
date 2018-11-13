@@ -15,43 +15,32 @@
     <div class="container">
      
      
-      <div class="row">
+      <div class="row align-items-center">
         
-        <div class="col-xs-2">
-          <div class="header-burger">
-            <a href="#" class="nav-link">
-              <picture>
-                <source srcset="img/burger.svg">
-                <img src="img/burger.png" alt="Меню" title="Меню">
-              </picture>
-            </a>
-          </div>
+        <div class="col-xs-2 header-cols-wrap header-nav-link">
+          <picture>
+            <source srcset="img/burger.svg" type="image/svg+xml">
+            <img src="img/burger.png" title="Меню" alt="Меню">
+          </picture>
         </div>
-        
-        <div class="col-xs-4">
-          <div class="header-logo">
-            <picture>
-              <source srcset="img/logo.svg">
-              <img src="img/logo.png" alt="Логотип" title="Логотип">
-            </picture>
-          </div>
+        <div class="col-xs-4 header-cols-wrap header-logotype">
+          <picture>
+            <source srcset="img/logo.svg" type="image/svg+xml">
+            <img src="img/logo.png" title="Логотип" alt="Логотип">
+          </picture>
         </div>
-        
-        <div class="col-xs-6">
-          <div class="header-shop">
-            <a href="#" class="cart-link">
-              <picture>
-                <source srcset="img/cart.svg">
-                <img src="img/cart.png" alt="Корзина" title="Корзина">
-              </picture>
-            </a>
-            <span>Корзина</span>
-          </div>
-          <div class="header-sign-in">
-            <button class="button">
-              Войти
-            </button>
-          </div>
+        <div class="col-xs-3 header-cols-wrap header-cart">
+          <picture>
+            <source srcset="img/cart.svg" type="image/svg+xml">
+            <img src="img/cart.png" title="Корзина" alt="Корзина">
+          </picture>
+          <span class="header-cart-text">Корзина</span>
+          <input type="text" class="input-text header-cart-number" value="0" disabled>
+        </div>
+        <div class="col-xs-3 header-cols-wrap header-sign-in">
+          <button class="button">
+            Войти
+          </button>
         </div>
         
       </div>

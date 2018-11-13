@@ -3,16 +3,22 @@
 html {
   font-size: 10px;
 }
-.row {
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
 /* Typography */
-/* Header */
-.header {
-  padding-top: 2rem;
+.input-text {
+  height: 2rem;
+  text-align: center;
+  background-color: #f0f2f7;
+  border: 1px solid #e3e8f0;
+  border-radius: 10px;
 }
-.header-logo {
-  padding-left: 1rem;
-  padding-right: 1rem;
+/* Header */
+.header-cols-wrap {
+  height: 60px;
+}
+.header-nav-link {
+  padding: 2rem;
+  border-right: 1px solid #e3e8f0;
+}
+.header-cart-number {
+  width: 20px;
 }

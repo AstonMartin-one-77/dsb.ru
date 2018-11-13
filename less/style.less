@@ -4,11 +4,11 @@
 @text-dark: rgb(52, 62, 91);
 @text-light: rgb(161, 168, 190);
 @text-lightsome: rgb(185, 192, 211);
-@border-color: rgb(240, 242, 247);
+@border-color: rgb(227, 232, 240);
 @check-in-color: rgb(0, 226, 170);
 @link-btn-color: rgb(39, 84, 235);
 @toggle-in-color: rgb(0, 222, 234);
-@bg-items-color: rgb(227, 232, 240);
+@bg-items-color: rgb(240, 242, 247);
 @bg-shop-color: rgb(228, 229, 231);
 
 /* Basic settings */
@@ -16,18 +16,25 @@ html {
   font-size: 10px;
 }
 
-.row {
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-
 /* Typography */
+.input-text {
+  height: 2rem;
+  text-align: center;
+  background-color: @bg-items-color;
+  border: 1px solid @border-color;
+  border-radius: 10px;
+}
 
 /* Header */
 .header {
-  padding-top: 2rem;
-  &-logo {
-    padding-left: 1rem;
-    padding-right: 1rem;
+  &-cols-wrap {
+    height: 60px;
+  }
+  &-nav-link {
+    padding: 2rem;
+    border-right: 1px solid @border-color;
+  }
+  &-cart-number {
+    width: 20px;
   }
 }
