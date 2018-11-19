@@ -11,42 +11,51 @@
 </head>
 <body>
 
-  <header class="header">
-    <div class="container">
-     
-     
+  <header class="container">
+    <div class="header">
       <div class="row align-items-center">
         
-        <div class="col-xs-2 header-cols-wrap header-nav-link">
-          <picture>
-            <source srcset="img/burger.svg" type="image/svg+xml">
-            <img src="img/burger.png" title="Меню" alt="Меню">
-          </picture>
+        <div class="col-xs-2">
+          <div class="wrap-block header-nav-link">
+            <picture>
+              <source srcset="img/burger.svg" type="image/svg+xml">
+              <img src="img/burger.png" title="Меню" alt="Меню">
+            </picture>
+          </div>
         </div>
-        <div class="col-xs-4 header-cols-wrap header-logotype">
-          <picture>
-            <source srcset="img/logo.svg" type="image/svg+xml">
-            <img src="img/logo.png" title="Логотип" alt="Логотип">
-          </picture>
+        <div class="col">
+          <div class="wrap-block header-logotype">
+            <picture>
+              <source srcset="img/logo.svg" type="image/svg+xml">
+              <img src="img/logo.png" title="Логотип" alt="Логотип">
+            </picture>
+          </div>
         </div>
-        <div class="col-xs-3 header-cols-wrap header-cart">
-          <picture>
-            <source srcset="img/cart.svg" type="image/svg+xml">
-            <img src="img/cart.png" title="Корзина" alt="Корзина">
-          </picture>
-          <span class="header-cart-text">Корзина</span>
-          <input type="text" class="input-text header-cart-number" value="0" disabled>
+        <div class="col-xs-3">
+          <div class="wrap-block header-cart">
+            <picture>
+              <source srcset="img/cart.svg" type="image/svg+xml">
+              <img src="img/cart.png" title="Корзина" alt="Корзина">
+            </picture>
+          </div>
+          <div class="wrap-block header-cart" hidden>
+            <span>Корзина</span>
+          </div>
+          <div class="wrap-block header-cart">
+            <input type="text" class="input-text" value="0" disabled>
+          </div>
         </div>
-        <div class="col-xs-3 header-cols-wrap header-sign-in">
-          <button class="button">
-            Войти
-          </button>
+        <div class="col-xs-3">
+          <div class="wrap-block header-signIn">
+            <button class="button">
+              Войти
+            </button>
+          </div>
         </div>
         
       </div>
-      
-      
     </div>
+    
   </header>
   
   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->

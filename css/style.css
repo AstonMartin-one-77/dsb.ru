@@ -4,21 +4,41 @@ html {
   font-size: 10px;
 }
 /* Typography */
+.wrap-block {
+  display: inline-block;
+}
 .input-text {
   height: 2rem;
   text-align: center;
   background-color: #f0f2f7;
   border: 1px solid #e3e8f0;
-  border-radius: 10px;
+  border-radius: 1rem;
+}
+.button {
+  height: 3rem;
+  text-align: center;
+  background-color: #f0f2f7;
+  border: 1px solid #e3e8f0;
+  border-radius: 1.5rem;
 }
 /* Header */
-.header-cols-wrap {
-  height: 60px;
+.header .row {
+  margin-top: 1rem;
+  border: 1px solid #e3e8f0;
 }
 .header-nav-link {
   padding: 2rem;
   border-right: 1px solid #e3e8f0;
 }
-.header-cart-number {
-  width: 20px;
+.header-cart {
+  padding-right: 5px;
+}
+.header-cart > .input-text {
+  width: 2rem;
+}
+.header-signIn {
+  margin: 0rem 1rem;
+}
+.header-signIn > .button {
+  width: 5rem;
 }

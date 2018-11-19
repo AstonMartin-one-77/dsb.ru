@@ -17,24 +17,44 @@ html {
 }
 
 /* Typography */
+.wrap-block {
+  display: inline-block;
+}
 .input-text {
   height: 2rem;
   text-align: center;
   background-color: @bg-items-color;
   border: 1px solid @border-color;
-  border-radius: 10px;
+  border-radius: 1rem;
+}
+.button {
+  height: 3rem;
+  text-align: center;
+  background-color: @bg-items-color;
+  border: 1px solid @border-color;
+  border-radius: 1.5rem;
 }
 
 /* Header */
 .header {
-  &-cols-wrap {
-    height: 60px;
+  & .row {
+    margin-top: 1rem;
+    border: 1px solid @border-color;
   }
   &-nav-link {
     padding: 2rem;
     border-right: 1px solid @border-color;
   }
-  &-cart-number {
-    width: 20px;
+  &-cart {
+    padding-right: 5px;
+  }
+  &-cart > .input-text {
+    width: 2rem;
+  }
+  &-signIn {
+    margin: 0rem 1rem;
+    & > .button {
+      width: 5rem;
+    }
   }
 }
