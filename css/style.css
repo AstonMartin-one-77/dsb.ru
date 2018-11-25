@@ -24,7 +24,8 @@ html {
 }
 /* Header */
 .main-text {
-  font-display: 'Crimson Text', serif;
+  font-family: 'Crimson Text', serif;
+  font-size: 14px;
 }
 .sub-text {
   font-family: 'Montserrat', sans-serif;
