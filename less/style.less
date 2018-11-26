@@ -18,9 +18,15 @@ html {
 }
 
 /* Typography */
-.wrap-block {
-  display: inline-block;
+.main-text {
+  font-family: 'Crimson Text', serif;
+  font-size: 14px;
 }
+
+.sub-text {
+  font-family: 'Montserrat', sans-serif;
+}
+
 .input-text {
   height: 2rem;
   text-align: center;
@@ -28,6 +34,7 @@ html {
   border: 1px solid @border-color;
   border-radius: 1rem;
 }
+
 .button {
   height: 3rem;
   text-align: center;
@@ -37,18 +44,9 @@ html {
 }
 
 /* Header */
-.main-text {
-  font-family: 'Crimson Text', serif;
-  font-size: 14px;
-}
-.sub-text {
-  font-family: 'Montserrat', sans-serif;
-}
 .header {
-  & .row {
-    margin-top: 1rem;
-    border: 1px solid @border-color;
-  }
+  margin-top: 1rem;
+  border: 1px solid @border-color;
   &-nav-link {
     padding: 2rem;
     border-right: 1px solid @border-color;

@@ -5,8 +5,12 @@ html {
   font-size: 10px;
 }
 /* Typography */
-.wrap-block {
-  display: inline-block;
+.main-text {
+  font-family: 'Crimson Text', serif;
+  font-size: 14px;
+}
+.sub-text {
+  font-family: 'Montserrat', sans-serif;
 }
 .input-text {
   height: 2rem;
@@ -23,14 +27,7 @@ html {
   border-radius: 1.5rem;
 }
 /* Header */
-.main-text {
-  font-family: 'Crimson Text', serif;
-  font-size: 14px;
-}
-.sub-text {
-  font-family: 'Montserrat', sans-serif;
-}
-.header .row {
+.header {
   margin-top: 1rem;
   border: 1px solid #e3e8f0;
 }
