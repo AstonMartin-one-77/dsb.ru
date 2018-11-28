@@ -24,26 +24,30 @@ html {
   text-align: center;
   background-color: #f0f2f7;
   border: 1px solid #e3e8f0;
-  border-radius: 1.5rem;
+  border-radius: 15px;
+}
+img {
+  min-width: 2rem;
+  height: auto;
 }
 /* Header */
 .header {
-  margin-top: 1rem;
   border: 1px solid #e3e8f0;
+  border-radius: 4px;
+  /* Basic settings for header-menu: */
+  /* Left border: */
+  /* Paddings for header-cart: */
+}
+.header-menu {
+  height: 9rem;
+}
+.header-menu > .row {
+  height: 100%;
 }
 .header-nav-link {
-  padding: 2rem;
+  padding-right: 4rem;
   border-right: 1px solid #e3e8f0;
 }
-.header-cart {
-  padding-right: 5px;
-}
-.header-cart > .input-text {
-  width: 2rem;
-}
-.header-signIn {
-  margin: 0rem 1rem;
-}
-.header-signIn > .button {
-  width: 5rem;
+.header-cart-text {
+  padding: 3px;
 }

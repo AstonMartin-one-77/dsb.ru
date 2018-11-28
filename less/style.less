@@ -40,27 +40,32 @@ html {
   text-align: center;
   background-color: @bg-items-color;
   border: 1px solid @border-color;
-  border-radius: 1.5rem;
+  border-radius: 15px;
+}
+
+img {
+  min-width: 2rem;
+  height: auto;
 }
 
 /* Header */
 .header {
-  margin-top: 1rem;
   border: 1px solid @border-color;
+  border-radius: 4px;
+  /* Basic settings for header-menu: */
+  &-menu {
+    height: 9rem;
+    & > .row {
+      height: 100%;
+    }
+  }
+  /* Left border: */
   &-nav-link {
-    padding: 2rem;
+    padding-right: 4rem;
     border-right: 1px solid @border-color;
   }
-  &-cart {
-    padding-right: 5px;
-  }
-  &-cart > .input-text {
-    width: 2rem;
-  }
-  &-signIn {
-    margin: 0rem 1rem;
-    & > .button {
-      width: 5rem;
-    }
+  /* Paddings for header-cart: */
+  &-cart-text {
+    padding: 3px;
   }
 }

@@ -10,52 +10,62 @@
   <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
-
-  <header class="container">
-    <div class="header">
-      <div class="row align-items-center">
-        
-        <div class="col-2">
-          <div class="d-inline-block header-nav-link">
-            <picture>
-              <source srcset="img/burger.svg" type="image/svg+xml">
-              <img src="img/burger.png" title="Меню" alt="Меню">
-            </picture>
+  
+  <header class="header">
+    <div class="container">
+      
+      <div class="header-menu">
+        <div class="row align-items-strench">
+          <div class="col-auto">
+            <div class="header-nav-link d-flex h-100">
+              <picture class="icon align-self-center">
+                <source srcset="img/burger.svg" type="image/svg+xml">
+                <img src="img/burger.png" title="Меню" alt="Меню">
+              </picture>
+            </div>
+          </div>
+          <div class="col-auto">
+            <div class="header-logo d-flex h-100">
+              <picture class="align-self-center">
+                <source srcset="img/logo.svg" type="image/svg+xml">
+                <img src="img/logo.png" title="Логотип" alt="Логотип">
+              </picture>
+            </div>
+          </div>
+          <div class="col-auto ml-auto">
+            <div class="header-cart d-flex h-100 align-items-center">
+              <div class="header-cart-img">
+                <picture class="icon">
+                  <source srcset="img/cart.svg" type="image/svg+xml">
+                  <img src="img/cart.png" title="Корзина" alt="Корзина">
+                </picture>
+              </div>
+              <div class="header-cart-text">
+                <span class="main-text" hidden>Корзина</span>
+              </div>
+              <div class="header-cart-number">
+                <input type="submit" class="input-text" value="0">
+              </div>
+            </div>
+          </div>
+          <div class="col-auto">
+            <div class="header-sign-in d-flex h-100">
+              <button class="button" hidden>
+                <span class="main-text">Войти</span>
+              </button>
+              <picture class="icon align-self-center">
+                <source srcset="img/sign_in.svg" type="image/svg+xml">
+                <img src="img/sign_in.png" title="Войти" alt="Войти">
+              </picture>
+            </div>
           </div>
         </div>
-        <div class="col-4">
-          <div class="header-logotype">
-            <picture>
-              <source srcset="img/logo.svg" type="image/svg+xml">
-              <img src="img/logo.png" title="Логотип" alt="Логотип">
-            </picture>
-          </div>
-        </div>
-        <div class="col-4">
-          <div class="d-inline-block header-cart">
-            <picture>
-              <source srcset="img/cart.svg" type="image/svg+xml">
-              <img src="img/cart.png" title="Корзина" alt="Корзина">
-            </picture>
-          </div>
-          <div class="header-cart d-none d-sm-inline">
-            <span class="main-text">Корзина</span>
-          </div>
-          <div class="d-inline-block header-cart">
-            <input type="text" class="input-text" value="0" disabled>
-          </div>
-        </div>
-        <div class="col-2">
-          <div class="wrap-block header-signIn">
-            <button class="button">
-              <span class="main-text">Войти</span>
-            </button>
-          </div>
-        </div>
-        
+      </div>
+      
+      <div class="header-submenu">
+        <div class="row"></div>
       </div>
     </div>
-    
   </header>
   
   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
