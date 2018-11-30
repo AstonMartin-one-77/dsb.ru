@@ -10,18 +10,17 @@
   <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
-  
+ 
   <header class="header">
-    <div class="container">
-      
-      <div class="header-menu">
+    <div class="header-menu">
+      <div class="container h-100">
         <div class="row align-items-strench h-100">
           <div class="col-auto">
             <div class="header-nav-link d-flex d-md-none h-100">
               <div class="align-self-center">
                 <picture class="icon">
                   <source srcset="img/burger.svg" type="image/svg+xml">
-                  <img src="img/burger.png" title="Меню" alt="Меню">
+                  <img src="img/burger.png" title="Nav" alt="Nav">
                 </picture>
               </div>
             </div>
@@ -31,13 +30,13 @@
               <div class="align-self-center">
                 <picture>
                   <source srcset="img/logo.svg" type="image/svg+xml">
-                  <img src="img/logo.png" title="Логотип" alt="Логотип">
+                  <img src="img/logo.png" title="Logotype" alt="Logotype">
                 </picture>
               </div>
             </div>
           </div>
           <div class="col-auto ml-auto mr-auto">
-            <nav class="header-nav-menu">
+            <nav class="header-nav-menu d-none d-lg-flex">
               <ul>
                 <li><a href="#" class="main-text">Home</a></li>
                 <li><a href="#" class="main-text">Devices</a></li>
@@ -52,7 +51,7 @@
               <div class="header-cart-img">
                 <picture class="icon">
                   <source srcset="img/cart.svg" type="image/svg+xml">
-                  <img src="img/cart.png" title="Корзина" alt="Корзина">
+                  <img src="img/cart.png" title="Cart" alt="Cart">
                 </picture>
               </div>
               <div class="header-cart-text">
@@ -73,16 +72,45 @@
               <div class="d-block d-md-none">
                 <picture class="icon">
                   <source srcset="img/sign_in.svg" type="image/svg+xml">
-                  <img src="img/sign_in.png" title="Войти" alt="Войти">
+                  <img src="img/sign_in.png" title="Sign In" alt="Sign In">
                 </picture>
               </div>
             </div>
           </div>
         </div>
       </div>
-      
-      <div class="header-submenu">
-        <div class="row"></div>
+    </div>
+    <div class="header-submenu">
+      <div class="container h-100">
+        <div class="row align-items-strench h-100">
+          <div class="col-auto">
+            <nav class="header-subnav-menu">
+              <ul>
+                <li><a href="#" class="main-text">Top Sales</a></li>
+                <li><a href="#" class="main-text">Brand Focus</a></li>
+                <li><a href="#" class="main-text">Hi-Tech</a></li>
+                <li><a href="#" class="main-text">Best Sellers</a></li>
+                <li><a href="#" class="main-text">Projects</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="col-auto ml-auto">
+            <nav class="header-subnav-support">
+              <ul>
+                <li><a href="#" class="main-text">Support</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="col-auto">
+            <div class="header-search">
+              <picture class="search-icon">
+                <source srcset="img/search_icon.svg" type="image/svg+xml">
+                <img src="img/search_icon.png" title="Search" alt="Search">
+              </picture>
+              <input type="text" class="input-search main-text" placeholder="I'm looking for...">
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </header>

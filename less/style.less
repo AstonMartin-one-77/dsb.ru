@@ -56,6 +56,7 @@ nav {
   & > ul {
     list-style: none;
     padding: 0;
+    margin: 0;
     display: flex;
     align-self: center;
   }
@@ -68,6 +69,7 @@ nav {
   /* header-menu: */
   &-menu {
     height: 9rem;
+    border-bottom: 1px solid @border-color;
   }
   /* header-nav-link: */
   &-nav-link {
@@ -76,7 +78,7 @@ nav {
   }
   /* header-nav-menu: */
   &-nav-menu > ul > li {
-    padding: 0rem 2rem;
+    padding: 0rem 1rem;
     & > a {
       text-decoration: none;
       font-size: 14px;
@@ -97,5 +99,39 @@ nav {
   }
   &-sign-in picture.icon {
     margin-left: -15px;
+  }
+  
+  /* header-submenu: */
+  &-submenu {
+    height: 5rem;
+  }
+  /* header-subnav-menu: */
+  &-subnav-menu > ul > li, &-subnav-support > ul > li {
+    padding: 0rem 1rem;
+    & > a {
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+  }
+  /* header-search: */
+  &-search {
+    height: 100%;
+    display: flex;
+    padding: 0rem 1rem;
+    border-right: 1px solid @border-color;
+    border-left: 1px solid @border-color;
+    & > .search-icon {
+      align-self: center;
+      margin: 0px 10px 3px 0px;
+      & > img {
+        min-width: 1rem;
+      }
+    }
+    & > .input-search {
+      align-self: center;
+      border: none;
+      font-size: 14px;
+      opacity: 0.6;
+    }
   }
 }
