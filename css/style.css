@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Crimson+Text:400,400i|Montserrat:400,900&subset=cyrillic,cyrillic-ext');
+@import url('https://fonts.googleapis.com/css?family=Crimson+Text:400,400i|Montserrat:400,600,900&subset=cyrillic,cyrillic-ext');
 /* Colors */
 /* Basic settings */
 html {
@@ -6,11 +6,13 @@ html {
 }
 /* Typography */
 .main-text {
-  font-family: 'Crimson Text', serif;
-  font-size: 14px;
+  font-family: 'Montserrat', sans-serif;
+  color: #343e5b;
+  font-weight: 600;
+  font-size: 11px;
 }
 .sub-text {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Crimson Text', serif;
 }
 .input-text {
   height: 2rem;
@@ -30,24 +32,56 @@ img {
   min-width: 2rem;
   height: auto;
 }
+nav {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+nav > ul {
+  list-style: none;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
 /* Header */
 .header {
   border: 1px solid #e3e8f0;
   border-radius: 4px;
-  /* Basic settings for header-menu: */
-  /* Left border: */
-  /* Paddings for header-cart: */
+  /* header-menu: */
+  /* header-nav-link: */
+  /* header-nav-menu: */
+  /* header-cart: */
+  /* header-sign-in: */
 }
 .header-menu {
   height: 9rem;
 }
-.header-menu > .row {
-  height: 100%;
-}
 .header-nav-link {
-  padding-right: 4rem;
+  padding: 0rem 2rem;
   border-right: 1px solid #e3e8f0;
 }
+.header-nav-menu > ul > li {
+  padding: 0rem 2rem;
+}
+.header-nav-menu > ul > li > a {
+  text-decoration: none;
+  font-size: 14px;
+}
+.header-cart {
+  margin-left: -15px;
+}
 .header-cart-text {
-  padding: 3px;
+  padding: 0px 5px;
+  text-transform: uppercase;
+}
+.header-sign-in .button {
+  padding: 0px 15px;
+  text-transform: uppercase;
+}
+.header-sign-in picture.icon {
+  margin-left: -15px;
 }

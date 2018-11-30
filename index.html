@@ -15,24 +15,39 @@
     <div class="container">
       
       <div class="header-menu">
-        <div class="row align-items-strench">
+        <div class="row align-items-strench h-100">
           <div class="col-auto">
-            <div class="header-nav-link d-flex h-100">
-              <picture class="icon align-self-center">
-                <source srcset="img/burger.svg" type="image/svg+xml">
-                <img src="img/burger.png" title="Меню" alt="Меню">
-              </picture>
+            <div class="header-nav-link d-flex d-md-none h-100">
+              <div class="align-self-center">
+                <picture class="icon">
+                  <source srcset="img/burger.svg" type="image/svg+xml">
+                  <img src="img/burger.png" title="Меню" alt="Меню">
+                </picture>
+              </div>
             </div>
           </div>
           <div class="col-auto">
             <div class="header-logo d-flex h-100">
-              <picture class="align-self-center">
-                <source srcset="img/logo.svg" type="image/svg+xml">
-                <img src="img/logo.png" title="Логотип" alt="Логотип">
-              </picture>
+              <div class="align-self-center">
+                <picture>
+                  <source srcset="img/logo.svg" type="image/svg+xml">
+                  <img src="img/logo.png" title="Логотип" alt="Логотип">
+                </picture>
+              </div>
             </div>
           </div>
-          <div class="col-auto ml-auto">
+          <div class="col-auto ml-auto mr-auto">
+            <nav class="header-nav-menu">
+              <ul>
+                <li><a href="#" class="main-text">Home</a></li>
+                <li><a href="#" class="main-text">Devices</a></li>
+                <li><a href="#" class="main-text">Delivery & Payment</a></li>
+                <li><a href="#" class="main-text">Guarantee</a></li>
+                <li><a href="#" class="main-text">About Us</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="col-auto">
             <div class="header-cart d-flex h-100 align-items-center">
               <div class="header-cart-img">
                 <picture class="icon">
@@ -41,22 +56,26 @@
                 </picture>
               </div>
               <div class="header-cart-text">
-                <span class="main-text" hidden>Корзина</span>
+                <span class="main-text d-none d-md-block">Cart</span>
               </div>
-              <div class="header-cart-number">
-                <input type="submit" class="input-text" value="0">
+              <div class="header-cart-number d-none d-sm-block">
+                <input type="submit" class="input-text main-text" value="0">
               </div>
             </div>
           </div>
           <div class="col-auto">
-            <div class="header-sign-in d-flex h-100">
-              <button class="button" hidden>
-                <span class="main-text">Войти</span>
-              </button>
-              <picture class="icon align-self-center">
-                <source srcset="img/sign_in.svg" type="image/svg+xml">
-                <img src="img/sign_in.png" title="Войти" alt="Войти">
-              </picture>
+            <div class="header-sign-in d-flex h-100 align-items-center">
+              <div class="d-none d-md-block">
+                <button class="button">
+                  <span class="main-text">Sign In</span>
+                </button>
+              </div>
+              <div class="d-block d-md-none">
+                <picture class="icon">
+                  <source srcset="img/sign_in.svg" type="image/svg+xml">
+                  <img src="img/sign_in.png" title="Войти" alt="Войти">
+                </picture>
+              </div>
             </div>
           </div>
         </div>

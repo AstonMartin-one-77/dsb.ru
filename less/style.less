@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Crimson+Text:400,400i|Montserrat:400,900&subset=cyrillic,cyrillic-ext');
+@import url('https://fonts.googleapis.com/css?family=Crimson+Text:400,400i|Montserrat:400,600,900&subset=cyrillic,cyrillic-ext');
 /* Colors */
 @light-color: rgb(255, 255, 255);
 @text-black: rgb(28, 30, 35);
@@ -19,12 +19,14 @@ html {
 
 /* Typography */
 .main-text {
-  font-family: 'Crimson Text', serif;
-  font-size: 14px;
+  font-family: 'Montserrat', sans-serif;
+  color: @text-dark;
+  font-weight: 600;
+  font-size: 11px;
 }
 
 .sub-text {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Crimson Text', serif;
 }
 
 .input-text {
@@ -48,24 +50,52 @@ img {
   height: auto;
 }
 
+nav {
+  height: 100%;
+  display: flex;
+  & > ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    align-self: center;
+  }
+}
+
 /* Header */
 .header {
   border: 1px solid @border-color;
   border-radius: 4px;
-  /* Basic settings for header-menu: */
+  /* header-menu: */
   &-menu {
     height: 9rem;
-    & > .row {
-      height: 100%;
-    }
   }
-  /* Left border: */
+  /* header-nav-link: */
   &-nav-link {
-    padding-right: 4rem;
+    padding: 0rem 2rem;
     border-right: 1px solid @border-color;
   }
-  /* Paddings for header-cart: */
-  &-cart-text {
-    padding: 3px;
+  /* header-nav-menu: */
+  &-nav-menu > ul > li {
+    padding: 0rem 2rem;
+    & > a {
+      text-decoration: none;
+      font-size: 14px;
+    }
+  }
+  /* header-cart: */
+  &-cart {
+    margin-left: -15px;
+    &-text {
+      padding: 0px 5px;
+      text-transform: uppercase;
+    }
+  }
+  /* header-sign-in: */
+  &-sign-in .button {
+    padding: 0px 15px;
+    text-transform: uppercase;
+  }
+  &-sign-in picture.icon {
+    margin-left: -15px;
   }
 }
