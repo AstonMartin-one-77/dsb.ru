@@ -13,11 +13,11 @@
  
   <header class="header">
     <div class="header-menu">
-      <div class="container h-100">
-        <div class="row align-items-strench h-100">
+      <div class="container">
+        <div class="row">
           <div class="col-auto">
-            <div class="header-nav-link d-flex d-md-none h-100">
-              <div class="align-self-center">
+            <div class="header-nav-link h-flexblock" hidden>
+              <div>
                 <picture class="icon">
                   <source srcset="img/burger.svg" type="image/svg+xml">
                   <img src="img/burger.png" title="Nav" alt="Nav">
@@ -26,8 +26,8 @@
             </div>
           </div>
           <div class="col-auto">
-            <div class="header-logo d-flex h-100">
-              <div class="align-self-center">
+            <div class="header-logo h-flexblock">
+              <div>
                 <picture>
                   <source srcset="img/logo.svg" type="image/svg+xml">
                   <img src="img/logo.png" title="Logotype" alt="Logotype">
@@ -36,7 +36,7 @@
             </div>
           </div>
           <div class="col-auto ml-auto mr-auto">
-            <nav class="header-nav-menu d-none d-lg-flex">
+            <nav class="header-nav-menu">
               <ul>
                 <li><a href="#" class="main-text">Home</a></li>
                 <li><a href="#" class="main-text">Devices</a></li>
@@ -47,7 +47,7 @@
             </nav>
           </div>
           <div class="col-auto">
-            <div class="header-cart d-flex h-100 align-items-center">
+            <div class="header-cart h-flexblock">
               <div class="header-cart-img">
                 <picture class="icon">
                   <source srcset="img/cart.svg" type="image/svg+xml">
@@ -55,25 +55,19 @@
                 </picture>
               </div>
               <div class="header-cart-text">
-                <span class="main-text d-none d-md-block">Cart</span>
+                <span class="main-text">Cart</span>
               </div>
-              <div class="header-cart-number d-none d-sm-block">
+              <div class="header-cart-number">
                 <input type="submit" class="input-text main-text" value="0">
               </div>
             </div>
           </div>
           <div class="col-auto">
-            <div class="header-sign-in d-flex h-100 align-items-center">
-              <div class="d-none d-md-block">
+            <div class="header-sign-in h-flexblock">
+              <div>
                 <button class="button">
                   <span class="main-text">Sign In</span>
                 </button>
-              </div>
-              <div class="d-block d-md-none">
-                <picture class="icon">
-                  <source srcset="img/sign_in.svg" type="image/svg+xml">
-                  <img src="img/sign_in.png" title="Sign In" alt="Sign In">
-                </picture>
               </div>
             </div>
           </div>
@@ -81,8 +75,8 @@
       </div>
     </div>
     <div class="header-submenu">
-      <div class="container h-100">
-        <div class="row align-items-strench h-100">
+      <div class="container">
+        <div class="row">
           <div class="col-auto">
             <nav class="header-subnav-menu">
               <ul>
@@ -102,18 +96,48 @@
             </nav>
           </div>
           <div class="col-auto">
-            <div class="header-search">
-              <picture class="search-icon">
-                <source srcset="img/search_icon.svg" type="image/svg+xml">
-                <img src="img/search_icon.png" title="Search" alt="Search">
-              </picture>
-              <input type="text" class="input-search main-text" placeholder="I'm looking for...">
+            <div class="header-search h-flexblock">
+              <div class="search-icon">
+                <picture>
+                  <source srcset="img/search_icon.svg" type="image/svg+xml">
+                  <img src="img/search_icon.png" title="Search" alt="Search">
+                </picture>
+              </div>
+              <div class="input-search">
+                <input type="text" class="main-text" placeholder="I'm looking for...">
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
   </header>
+  
+  <main class="main">
+    <div class="main-banner">
+      <div class="container">
+        <div class="row">
+          <div class="col-6">
+            <div class="main-banner-desc v-flexblock">
+              <div class="main-banner-header">
+                <span class="main-text">iPhone 6 32Gb<br>Black</span>
+              </div>
+              <div class="main-banner-sub">
+                <span class="main-text">At first, for some time, I was not able to answer him one word;<br>but as he had taken me in his arms I held fast by him, or I should<br>have fallen to the ground.</span>
+              </div>
+              <div class="main-banner-buy">
+                <button>
+                  Buy Now
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-4"></div>
+          <div class="col-2"></div>
+        </div>
+      </div>
+    </div>
+  </main>
   
   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>

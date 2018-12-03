@@ -29,6 +29,28 @@ html {
   font-family: 'Crimson Text', serif;
 }
 
+.container {
+  height: 100%;
+  > .row {
+    height: 100%;
+    align-items: stretch;
+  }
+}
+
+.h-flexblock {
+  height: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+}
+
+.v-flexblock {
+  height: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
 .input-text {
   height: 2rem;
   text-align: center;
@@ -115,20 +137,16 @@ nav {
   }
   /* header-search: */
   &-search {
-    height: 100%;
-    display: flex;
     padding: 0rem 1rem;
     border-right: 1px solid @border-color;
     border-left: 1px solid @border-color;
     & > .search-icon {
-      align-self: center;
       margin: 0px 10px 3px 0px;
-      & > img {
+      & img {
         min-width: 1rem;
       }
     }
-    & > .input-search {
-      align-self: center;
+    .input-search > input {
       border: none;
       font-size: 14px;
       opacity: 0.6;
