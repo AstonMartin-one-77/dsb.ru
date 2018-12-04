@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Crimson+Text:400,400i|Montserrat:400,600,900&subset=cyrillic,cyrillic-ext');
-/* Colors */
+
+
+/* -==============  Colors  ==============- */
 @light-color: rgb(255, 255, 255);
 @text-black: rgb(28, 30, 35);
 @text-dark: rgb(52, 62, 91);
@@ -12,23 +14,23 @@
 @bg-items-color: rgb(240, 242, 247);
 @bg-shop-color: rgb(228, 229, 231);
 
-/* Basic settings */
+
+/* -==============  Basic settings  ==============- */
 html {
   font-size: 10px;
 }
 
-/* Typography */
+
+/* -==============  Typography  ==============- */
 .main-text {
   font-family: 'Montserrat', sans-serif;
   color: @text-dark;
   font-weight: 600;
-  font-size: 11px;
+  font-size: 1.1rem;
 }
-
 .sub-text {
   font-family: 'Crimson Text', serif;
 }
-
 .container {
   height: 100%;
   > .row {
@@ -36,21 +38,29 @@ html {
     align-items: stretch;
   }
 }
-
+/* Horizontal flexbox (basic align - center): */
 .h-flexblock {
   height: 100%;
   display: flex;
   flex-flow: row wrap;
   align-items: center;
 }
-
+/* Vertical flexbox (basic align - center): */
 .v-flexblock {
   height: 100%;
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
 }
-
+/* Vertical flexbox (align - left): */
+.v-flexblock-left {
+  .v-flexblock;
+  align-items: flex-start;
+}
+input:focus,
+button:focus {
+  outline: none;
+}
 .input-text {
   height: 2rem;
   text-align: center;
@@ -58,36 +68,55 @@ html {
   border: 1px solid @border-color;
   border-radius: 1rem;
 }
-
 .button {
   height: 3rem;
   text-align: center;
   background-color: @bg-items-color;
   border: 1px solid @border-color;
-  border-radius: 15px;
+  border-radius: 1.5rem;
+  transition: 0.2s;
+  &:hover {
+    background-color: darken(@bg-items-color, 7%);
+    border-color: darken(@border-color, 7%);
+    cursor: pointer;
+  }
 }
-
-img {
-  min-width: 2rem;
-  height: auto;
-}
-
+/* Navigation menu (Horizontal): */
 nav {
   height: 100%;
-  display: flex;
-  & > ul {
+  ul {
+    .h-flexblock;
     list-style: none;
     padding: 0;
     margin: 0;
-    display: flex;
-    align-self: center;
+    li {
+      padding: 0rem 1rem;
+      a, a:hover {
+        color: @text-dark;
+        text-decoration: none;
+      }
+      /* Hover effects: */
+      a::after {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 0.2rem;
+        transform: scaleX(0);
+        background-color: @text-dark;
+        transition: 0.3s;
+      }
+      a:hover::after {
+        transform: scaleX(1);
+      }
+    }
   }
 }
 
-/* Header */
+
+/* -==============  Header  ==============- */
 .header {
   border: 1px solid @border-color;
-  border-radius: 4px;
+  border-radius: 0.4rem;
   /* header-menu: */
   &-menu {
     height: 9rem;
@@ -99,40 +128,40 @@ nav {
     border-right: 1px solid @border-color;
   }
   /* header-nav-menu: */
-  &-nav-menu > ul > li {
-    padding: 0rem 1rem;
-    & > a {
-      text-decoration: none;
-      font-size: 14px;
-    }
+  &-nav-menu a {
+    font-size: 1.4rem;
   }
-  /* header-cart: */
-  &-cart {
-    margin-left: -15px;
-    &-text {
-      padding: 0px 5px;
-      text-transform: uppercase;
+  /* header-cart-text: */
+  &-cart-text {
+    padding: 0rem 0.5rem;
+    text-transform: uppercase;
+    span::before {
+      background-image: url('../img/cart.png');
+      background-size: 100% 100%;
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: 0.5rem;
+      width: 1.8rem;
+      height: 1.7rem;
+      content: '';
     }
   }
   /* header-sign-in: */
   &-sign-in .button {
-    padding: 0px 15px;
+    padding: 0rem 1.5rem;
     text-transform: uppercase;
   }
-  &-sign-in picture.icon {
-    margin-left: -15px;
-  }
-  
   /* header-submenu: */
   &-submenu {
     height: 5rem;
   }
   /* header-subnav-menu: */
-  &-subnav-menu > ul > li, &-subnav-support > ul > li {
-    padding: 0rem 1rem;
-    & > a {
-      text-decoration: none;
-      text-transform: uppercase;
+  &-subnav-menu a, 
+  &-subnav-support a {
+    opacity: 0.6;
+    text-transform: uppercase;
+    &:hover {
+      opacity: 1;
     }
   }
   /* header-search: */
@@ -140,16 +169,35 @@ nav {
     padding: 0rem 1rem;
     border-right: 1px solid @border-color;
     border-left: 1px solid @border-color;
-    & > .search-icon {
-      margin: 0px 10px 3px 0px;
-      & img {
-        min-width: 1rem;
+    .input-search {
+      input {
+        border: none;
+        font-size: 1.4rem;
+        opacity: 0.6;
+      }
+      /* Hover effects: */
+      &::after {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 2px;
+        background-color: @text-dark;
+        transform: scaleX(0);
+        transition: 0.3s;
+      }
+      &:hover::after {
+        transform: scaleX(1);
       }
     }
-    .input-search > input {
-      border: none;
-      font-size: 14px;
-      opacity: 0.6;
+    .input-search::before {
+      content: '';
+      background-image: url('../img/search_icon.png');
+      background-size: 100% 100%;
+      display: inline-block;
+      vertical-align: middle;
+      margin: 0rem 0.5rem 0.3rem 0rem;
+      width: 1.3rem;
+      height: 1.3rem;
     }
   }
 }
