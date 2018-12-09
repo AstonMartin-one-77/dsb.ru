@@ -208,7 +208,7 @@ nav {
   background-color: @text-black;
   &-banner {
     &-desc {
-      margin: 5rem 0rem 0rem 5rem;
+      margin: 5rem 0rem 0rem 8rem;
     }
     &-header .main-text {
       font-size: 42px;
@@ -235,6 +235,37 @@ nav {
           background-color: darken(@link-btn-color, 7%);
         }
       }
+    }
+    /* Slick slider -> main-banner-prev: */
+    &-prev, &-next {
+      border: none;
+      background: none;
+      padding: 0;
+      cursor: pointer;
+      position: absolute;
+      z-index: 999;
+      top: 50%;
+      transform: translateY(-50%);
+      &::before {
+        background-size: 100% 100%;
+        opacity: 0.6;
+        width: 4rem;
+        height: 4rem;
+        display: inline-block;
+        vertical-align: middle;
+        content: '';
+      }
+      &:hover::before {
+        opacity: 1;
+      }
+    }
+    &-prev {
+      left: 0;
+      &::before { background-image: url('../img/prev_button.png'); }
+    }
+    &-next {
+      right: 0;
+      &::before { background-image: url('../img/next_button.png'); }
     }
   }
 }

@@ -233,8 +233,11 @@ nav ul li a:hover::after {
 .main {
   background-color: #1c1e23;
 }
+.main-banner {
+  /* Slick slider -> main-banner-prev: */
+}
 .main-banner-desc {
-  margin: 5rem 0rem 0rem 5rem;
+  margin: 5rem 0rem 0rem 8rem;
 }
 .main-banner-header .main-text {
   font-size: 42px;
@@ -261,4 +264,42 @@ nav ul li a:hover::after {
 }
 .main-banner-buy .button:hover {
   background-color: #1442da;
+}
+.main-banner-prev,
+.main-banner-next {
+  border: none;
+  background: none;
+  padding: 0;
+  cursor: pointer;
+  position: absolute;
+  z-index: 999;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+.main-banner-prev::before,
+.main-banner-next::before {
+  background-size: 100% 100%;
+  opacity: 0.6;
+  width: 4rem;
+  height: 4rem;
+  display: inline-block;
+  vertical-align: middle;
+  content: '';
+}
+.main-banner-prev:hover::before,
+.main-banner-next:hover::before {
+  opacity: 1;
+}
+.main-banner-prev {
+  left: 0;
+}
+.main-banner-prev::before {
+  background-image: url('../img/prev_button.png');
+}
+.main-banner-next {
+  right: 0;
+}
+.main-banner-next::before {
+  background-image: url('../img/next_button.png');
 }
