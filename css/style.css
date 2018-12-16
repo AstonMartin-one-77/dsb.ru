@@ -74,14 +74,12 @@ button:focus {
 }
 .input-text {
   height: 2rem;
-  text-align: center;
   background-color: #f0f2f7;
   border: 1px solid #e3e8f0;
   border-radius: 1rem;
 }
 .button {
   height: 3rem;
-  text-align: center;
   background-color: #f0f2f7;
   border: 1px solid #e3e8f0;
   border-radius: 1.5rem;
@@ -230,22 +228,20 @@ nav ul li a:hover::after {
   height: 1.3rem;
 }
 /* -==============  Main  ==============- */
-.main {
-  background-color: #1c1e23;
-}
 .main-banner {
+  background-color: #1c1e23;
   /* Slick slider -> main-banner-prev: */
 }
 .main-banner-desc {
   margin: 5rem 0rem 0rem 8rem;
 }
 .main-banner-header .main-text {
-  font-size: 42px;
+  font-size: 4.2rem;
   font-weight: 900;
   color: #ffffff;
 }
 .main-banner-sub .sub-text {
-  font-size: 16px;
+  font-size: 1.6rem;
   color: #ffffff;
 }
 .main-banner-buy {
@@ -302,4 +298,31 @@ nav ul li a:hover::after {
 }
 .main-banner-next::before {
   background-image: url('../img/next_button.png');
+}
+.main-store {
+  background-color: #e4e5e7;
+  padding: 3rem 0rem 2rem 0rem;
+}
+.main-store-settings {
+  height: 5.6rem;
+  background-color: #ffffff;
+  border-radius: 0.5rem;
+}
+.main-store-sort {
+  border-right: 2px solid #e3e8f0;
+}
+.main-store-sort .main-text {
+  padding: 0rem 2rem;
+  text-transform: uppercase;
+  opacity: 0.6;
+}
+.main-store-sort .sort-type {
+  opacity: 1;
+}
+.main-store-sort .sort-type::after {
+  content: '';
+  display: inline-block;
+  height: 0.8rem;
+  width: 0.8rem;
+  background-color: #e4e5e7;
 }
